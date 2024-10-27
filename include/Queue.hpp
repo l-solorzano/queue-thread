@@ -1,9 +1,21 @@
-/// This class allows to queue a finite number of primitive types
-
 #include <condition_variable>
 #include <mutex>
 #include <thread>
 
+/**
+ * @brief A Queue for a finite number of elements of a primitive type
+ * 
+ * This class implements a thread-safe queue that can hold a finite number of elements.
+ * 
+ * This class provides a push method that will drop the oldest element if the 
+ * queue is full.
+ * 
+ * This class provides two pop methods. If queue is empty, one of them shall block
+ * indefinitely, while the other one should throw an exception after a given timeout
+ * if no element is pushed during that time.
+ * 
+ * @tparam T The type of elements stored in the queue
+ */
 template <class T>
 class Queue 
 {

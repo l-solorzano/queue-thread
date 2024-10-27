@@ -16,11 +16,11 @@ cmake --build build
 
 ## Example program
 
-./build/queue 
+./build/source/queue 
 
 ## Unit tests
 
-./build/queue_test
+./build/testing/queue_test
 
 # Generate documentation
  
