@@ -5,6 +5,7 @@ Multi-threaded element queue project
 # Dependencies 
 
 - CMake
+- doxygen
 
 # Build 
 
@@ -20,3 +21,7 @@ cmake --build build
 ## Unit tests
 
 ./build/queue_test
+
+# Generate documentation
+ 
+$ doxygen Doxyfile
